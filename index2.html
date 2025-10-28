@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himanshu ❤️ Anjali | Wedding Invite</title>
+    <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  body {
+    background: #fff9f2;
+    color: #333;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* 🌅 Hero Section */
+  .hero {
+    height: 100vh;
+    background: url("images/IMG4.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.6)
+    );
+    z-index: 1;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffd369;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .hero p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: #fff;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  section {
+    padding: 80px 10%;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    /* color: #b8205b; */
+    font-family: "Playfair Display", serif;
+  }
+
+  /* 💞 Story Section */
+  .story p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+  }
+
+  /* 💍 Celebration Section */
+  .celebrations-section {
+    background: linear-gradient(135deg, #ffe7c7, #ffd9e8);
+    position: relative;
+    padding: 80px 10%;
+  }
+
+  .celebrations-title {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    color: #b8205b;
+    margin-bottom: 10px;
+  }
+
+  .celebrations-subtitle {
+    color: #6b4b4b;
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .celebration-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .celebration-card {
+    background: linear-gradient(145deg, #fffdfb, #ffe5e5);
+    width: 350px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(184, 32, 91, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .celebration-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(184, 32, 91, 0.25);
+  }
+
+  .celebration-card h3 {
+    font-size: 1.6rem;
+    color: #b8205b;
+    margin-bottom: 15px;
+  }
+
+  .celebration-card ul {
+    list-style: none;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .celebration-card.groom {
+    background: linear-gradient(145deg, #fff, #fef1cf);
+  }
+
+  .celebration-card.bride {
+    background: linear-gradient(145deg, #fff, #ffd8e8);
+  }
+
+  .final-wedding {
+    margin-top: 50px;
+    font-size: 1.2rem;
+    color: #b8205b;
+    font-weight: bold;
+    background: #fff0f4;
+    padding: 15px 25px;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(184, 32, 91, 0.2);
+    animation: glow 3s infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px rgba(255, 152, 174, 0.3);
+    }
+    to {
+      box-shadow: 0 0 20px rgba(184, 32, 91, 0.6);
+    }
+  }
+
+  /* 🗓️ Details Section */
+  .details {
+    background: linear-gradient(135deg, #ffe8d6, #fff3ec);
+    border-radius: 20px;
+    padding: 50px;
+    max-width: 700px;
+    margin: 60px auto;
+    box-shadow: 0 0 20px rgba(184, 32, 91, 0.1);
+  }
+
+  .details p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #4a3a3a;
+  }
+
+  .details a {
+    color: #b8205b;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .details h2 {
+    color: #b8205b
+  }
+
+  /* 📸 Gallery */
+  .gallery-section {
+    position: relative;
+    overflow: hidden;
+    max-width: 700px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #ffe0d7, #fff6f2);
+    border-radius: 20px;
+    padding: 40px 0;
+    box-shadow: 0 4px 20px rgba(184, 32, 91, 0.1);
+  }
+
+  .gallery {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+  }
+
+  .gallery img {
+    width: 100%;
+    max-width: 240px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 15px;
+    margin: 0 10px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(184, 32, 91, 0.2);
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    color: #b8205b;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 10;
+  }
+
+  .carousel-btn:hover {
+    background: #b8205b;
+    color: #fff;
+  }
+
+  .prev {
+    left: 10px;
+  }
+  .next {
+    right: 10px;
+  }
+
+  /* 💌 RSVP */
+  .rsvp button {
+    background: #b8205b;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .rsvp button:hover {
+    background: #951d4b;
+  }
+
+  footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.9rem;
+    color: #5c4b4b;
+    background: linear-gradient(135deg, #ffd9e8, #ffe7c7);
+  }
+
+  /* 🌸 Falling Flowers Animation */
+  .flower {
+    position: fixed;
+    top: -10px;
+    font-size: 1.2rem;
+    animation: fall linear forwards;
+    color: #ff7fa3;
+    opacity: 0.8;
+    z-index: 10;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  /* 📱 Responsive */
+  @media (max-width: 768px) {
+    .celebration-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    .celebration-card {
+      width: 90%;
+    }
+  }
+</style>
+
+  </head>
+  <body>
+    <!-- 🌸 Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>It’s Official! Himanshu & Anjali Are Getting Married!</h2>
+        <!-- <h2>Himanshu & Anjali Are Getting Married!</h2> -->
+        <p>Forever Begins on <strong>30th November 2025</strong></p>
+      </div>
+    </section>
+
+    <!-- 💕 Our Story -->
+ <section class="story">
+  <h2 class="celebrations-title">Our Journey</h2>
+  <p class="celebrations-subtitle"><br>
+    Our story began in school where friendship slowly grew into a bond built on trust, care, and understanding.  
+    What started with simple conversations and shared moments has become a journey that shaped who we are today.  
+    <br><br>
+    Since <strong>2013</strong> we have walked together through every phase of life, learning from each experience and celebrating each milestone.  
+    <br><br>
+    As we begin this new chapter surrounded by our families and loved ones, we feel grateful for every memory and excited for all that the future holds. 💫
+  </p>
+</section>
+
+
+
+    <!-- 💍 Wedding Details -->
+    <!-- 💍 The Celebrations Section -->
+    <section class="celebrations-section">
+      <h2 class="celebrations-title">The Celebrations</h2>
+      <br>
+      <p class="celebrations-subtitle">
+        Two families, two homes, countless memories — and one beautiful
+        beginning 💞
+      </p>
+
+      <div class="celebration-cards">
+        <!-- Groom Side -->
+        <div class="celebration-card groom">
+          <h3>Himanshu’s Side</h3>
+          <ul>
+            <li>🍱 <strong>Lunch:</strong> 29th Nov, 12:15 PM – Hisar Home</li>
+            <li>🕺 <strong>Sangeet:</strong> 29th Nov,06:15 PM – Hisar Home</li>
+            <li>🐎 <strong>Baraat:</strong> 30th Nov, 12:15 PM – Hisar Home</li>
+          </ul>
+        </div>
+
+        <!-- Bride Side -->
+        <div class="celebration-card bride">
+          <h3>Anjali’s Side</h3>
+          <ul>
+            <li>
+              💅 <strong>Mehendi:</strong> 29th Nov, 10:15 AM – GreySky Hotel
+            </li>
+            <li>🎶 <strong>Sangeet:</strong> 29th Nov, 06:15 PM – GreySky Hotel</li>
+            <li>
+              🌼 <strong>Haldi:</strong> 30th Nov, 09:15 AM – Royal Swan Banquets
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    <section class="details">
+      <h2>Wedding Details</h2>
+      <p><strong>Venue:</strong> Royal Swan Banquets, Sector 33, Gurgaon</p>
+      <p><strong>Date:</strong> 30th November 2025</p>
+      <p><strong>Time:</strong> 7:00 PM onwards</p>
+      <p>
+        <a
+          href="https://maps.app.goo.gl/XJZPh9necfEZnFsn9?g_st=ipc"
+          target="_blank"
+          >📍 View on Google Maps</a
+        >
+      </p>
+    </section>
+
+    <!-- 📸 Infinite Carousel -->
+    <section class="gallery-section">
+      <h2>Gallery</h2>
+      <div class="gallery" id="gallery">
+        <img src="images/IMG3.JPG" alt="Couple photo" />
+        <img src="images/IMG1.jpg" alt="Couple photo" />
+        <img src="images/IMG2.jpg" alt="Couple photo" />
+        <!-- <img src="IMG4.jpg" alt="Couple photo" /> -->
+        <!-- <img src="IMG5.jpg" alt="Couple photo" /> -->
+        <img src="images/IMG6.jpg" alt="Couple photo" />
+        <img src="images/IMG7.jpg" alt="Couple photo" />
+        <img src="images/IMG8.jpg" alt="Couple photo" />
+      </div>
+      <button class="carousel-btn prev">&#10094;</button>
+      <button class="carousel-btn next">&#10095;</button>
+    </section>
+
+    <!-- 💌 RSVP -->
+    <section class="rsvp">
+      <h2>Will You Join Us?</h2>
+      <a href="https://wa.me/91XXXXXXXXXX" target="_blank">
+        <button>Send RSVP 💌</button>
+      </a>
+    </section>
+
+    <footer>Made with ❤️ by Himanshu & Anjali</footer>
+
+    <!-- 🌸 Falling Flowers -->
+    <script>
+      const flowers = ["🌸", "🌺", "🌷", "💮"];
+      setInterval(() => {
+        const flower = document.createElement("div");
+        flower.classList.add("flower");
+        flower.innerText = flowers[Math.floor(Math.random() * flowers.length)];
+        flower.style.left = Math.random() * 100 + "vw";
+        flower.style.animationDuration = 5 + Math.random() * 5 + "s";
+        document.body.appendChild(flower);
+        setTimeout(() => flower.remove(), 10000);
+      }, 400);
+
+      /* 📸 Infinite Carousel Logic */
+      const gallery = document.getElementById("gallery");
+      const nextBtn = document.querySelector(".next");
+      const prevBtn = document.querySelector(".prev");
+
+      let offset = 0;
+      const slideSpeed = 1; // smaller = slower
+      const imageWidth = 720; // adjust if images are smaller/wider
+
+      function moveGallery() {
+        offset -= slideSpeed;
+        if (Math.abs(offset) >= gallery.scrollWidth / 2) {
+          offset = 0; // loop back
+        }
+        gallery.style.transform = `translateX(${offset}px)`;
+        requestAnimationFrame(moveGallery);
+      }
+
+      // Clone images to make it loop seamlessly
+      gallery.innerHTML += gallery.innerHTML;
+
+      // Manual controls
+      nextBtn.addEventListener("click", () => {
+        offset -= 400;
+      });
+      prevBtn.addEventListener("click", () => {
+        offset += 400;
+      });
+
+      // Start infinite animation
+      moveGallery();
+    </script>
+  </body>
+</html>
