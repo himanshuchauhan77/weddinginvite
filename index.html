@@ -4,385 +4,500 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Himanshu ❤️ Anjali | Wedding Invite</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-  }
+      /* 🌿 Global Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-  body {
-    background: #fff9f2;
-    color: #333;
-    overflow-x: hidden;
-    position: relative;
-  }
+      body {
+        font-family: "Poppins", sans-serif;
+        color: #333;
+        background: #fff8f4;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
 
-  /* 🌅 Hero Section */
-  .hero {
-    height: 100vh;
-    background: url("images/IMG4.jpg") center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    position: relative;
-  }
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+      }
 
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.4),
-      rgba(0, 0, 0, 0.6)
-    );
-    z-index: 1;
-  }
+      /* 🌅 Hero Section */
+      .hero {
+        height: 100vh;
+        background: url("images/IMG4.jpg") center/cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        color: #fff;
+      }
 
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    animation: fadeIn 2s ease-in-out;
-  }
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.45);
+        z-index: 1;
+      }
 
-  .hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #ffd369;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        margin-top: 35vh;
+        animation: fadeIn 2s ease-in-out;
+        padding: 0 20px;
+      }
 
-  .hero p {
-    margin-top: 0.5rem;
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    color: #fff;
-  }
+      .hero h2 {
+        font-size: 2.2rem;
+        color: #ffe19c;
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+      }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+      .hero p {
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        color: #fff;
+      }
 
-  section {
-    padding: 80px 10%;
-    text-align: center;
-  }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 
-  h2 {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    /* color: #b8205b; */
-    font-family: "Playfair Display", serif;
-  }
+      section {
+        padding: 60px 8%;
+        text-align: center;
+      }
 
-  /* 💞 Story Section */
-  .story p {
-    max-width: 700px;
-    margin: auto;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #444;
-  }
+      /* 💕 Story Section */
+      .story {
+        background: #fffdfb;
+        color: #444;
+        border-top: 3px solid #ffb6c1;
+      }
 
-  /* 💍 Celebration Section */
-  .celebrations-section {
-    background: linear-gradient(135deg, #ffe7c7, #ffd9e8);
-    position: relative;
-    padding: 80px 10%;
-  }
+      .story h2 {
+        color: #b8205b;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
 
-  .celebrations-title {
-    font-family: "Playfair Display", serif;
-    font-size: 2.5rem;
-    color: #b8205b;
-    margin-bottom: 10px;
-  }
+      .story p {
+        max-width: 700px;
+        margin: auto;
+        font-size: 1rem;
+        line-height: 1.8;
+      }
 
-  .celebrations-subtitle {
-    color: #6b4b4b;
-    font-size: 1rem;
-    margin-bottom: 40px;
-  }
+      /* 💍 Celebration Section */
+      .celebrations-section {
+        background: linear-gradient(135deg, #fff0f5, #fffbea);
+      }
 
-  .celebration-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+      .celebrations-title {
+        font-size: 2.3rem;
+        color: #b8205b;
+        margin-bottom: 0.8rem;
+      }
 
-  .celebration-card {
-    background: linear-gradient(145deg, #fffdfb, #ffe5e5);
-    width: 350px;
-    padding: 25px;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(184, 32, 91, 0.15);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-  }
+      .celebrations-subtitle {
+        color: #6b4b4b;
+        font-size: 1rem;
+        margin-bottom: 40px;
+      }
 
-  .celebration-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(184, 32, 91, 0.25);
-  }
+      .celebration-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
 
-  .celebration-card h3 {
-    font-size: 1.6rem;
-    color: #b8205b;
-    margin-bottom: 15px;
-  }
+      .celebration-card {
+        flex: 1 1 320px;
+        background: #fff;
+        padding: 25px;
+        border-radius: 18px;
+        box-shadow: 0 4px 15px rgba(184, 32, 91, 0.15);
+        transition: transform 0.3s ease;
+      }
 
-  .celebration-card ul {
-    list-style: none;
-    color: #333;
-    font-size: 1rem;
-    line-height: 1.8;
-  }
+      .celebration-card:hover {
+        transform: scale(1.03);
+      }
 
-  .celebration-card.groom {
-    background: linear-gradient(145deg, #fff, #fef1cf);
-  }
+      .celebration-card h3 {
+        font-size: 1.4rem;
+        color: #b8205b;
+        margin-bottom: 15px;
+      }
 
-  .celebration-card.bride {
-    background: linear-gradient(145deg, #fff, #ffd8e8);
-  }
+      .celebration-card ul {
+        list-style: none;
+        color: #333;
+        font-size: 0.95rem;
+        line-height: 1.8;
+      }
 
-  .final-wedding {
-    margin-top: 50px;
-    font-size: 1.2rem;
-    color: #b8205b;
-    font-weight: bold;
-    background: #fff0f4;
-    padding: 15px 25px;
-    border-radius: 30px;
-    display: inline-block;
-    box-shadow: 0 4px 15px rgba(184, 32, 91, 0.2);
-    animation: glow 3s infinite alternate;
-  }
+      .groom {
+        background: linear-gradient(145deg, #fffdfb, #fff3cf);
+      }
 
-  @keyframes glow {
-    from {
-      box-shadow: 0 0 10px rgba(255, 152, 174, 0.3);
-    }
-    to {
-      box-shadow: 0 0 20px rgba(184, 32, 91, 0.6);
-    }
-  }
+      .bride {
+        background: linear-gradient(145deg, #fffdfb, #ffd8e8);
+      }
 
-  /* 🗓️ Details Section */
-  .details {
-    background: linear-gradient(135deg, #ffe8d6, #fff3ec);
-    border-radius: 20px;
-    padding: 50px;
-    max-width: 700px;
-    margin: 60px auto;
-    box-shadow: 0 0 20px rgba(184, 32, 91, 0.1);
-  }
+      .final-wedding {
+        margin-top: 40px;
+        font-size: 1.1rem;
+        color: #b8205b;
+        background: #fff0f4;
+        padding: 12px 24px;
+        border-radius: 30px;
+        display: inline-block;
+        box-shadow: 0 0 12px rgba(184, 32, 91, 0.2);
+        animation: glow 3s infinite alternate;
+      }
 
-  .details p {
-    margin: 10px 0;
-    font-size: 1.1rem;
-    color: #4a3a3a;
-  }
+      @keyframes glow {
+        from {
+          box-shadow: 0 0 10px rgba(255, 152, 174, 0.3);
+        }
+        to {
+          box-shadow: 0 0 20px rgba(184, 32, 91, 0.6);
+        }
+      }
 
-  .details a {
-    color: #b8205b;
-    text-decoration: none;
-    font-weight: 600;
-  }
+      /* 🗓️ Details */
+      .details {
+        background: linear-gradient(135deg, #fff1d6, #fff4e9);
+        border-radius: 18px;
+        padding: 40px;
+        max-width: 650px;
+        margin: 50px auto;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
 
-  .details h2 {
-    color: #b8205b
-  }
+      .details h2 {
+        color: #b8205b;
+        margin-bottom: 1rem;
+      }
 
-  /* 📸 Gallery */
-  .gallery-section {
-    position: relative;
-    overflow: hidden;
-    max-width: 700px;
-    margin: 0 auto;
-    background: linear-gradient(135deg, #ffe0d7, #fff6f2);
-    border-radius: 20px;
-    padding: 40px 0;
-    box-shadow: 0 4px 20px rgba(184, 32, 91, 0.1);
-  }
+      .details p {
+        margin: 10px 0;
+        font-size: 1rem;
+      }
 
-  .gallery {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    will-change: transform;
-  }
+      .details a {
+        color: #b8205b;
+        text-decoration: none;
+        font-weight: 600;
+      }
 
-  .gallery img {
-    width: 100%;
-    max-width: 240px;
-    height: 300px;
-    object-fit: contain;
-    border-radius: 15px;
-    margin: 0 10px;
-    flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(184, 32, 91, 0.2);
-  }
+      /* 📸 Gallery */
+      .gallery-section {
+        padding: 100px 0 80px; /* Adds space above and below */
+        position: relative;
+        overflow: hidden;
+        max-width: 95%;
+        margin: 0 auto;
+      }
 
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.8);
-    border: none;
-    padding: 10px 15px;
-    font-size: 1.5rem;
-    color: #b8205b;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: 0.3s;
-    z-index: 10;
-  }
+      .gallery {
+        display: flex;
+        scroll-behavior: smooth;
+        overflow-x: scroll;
+        scrollbar-width: none;
+      }
 
-  .carousel-btn:hover {
-    background: #b8205b;
-    color: #fff;
-  }
+      .gallery::-webkit-scrollbar {
+        display: none;
+      }
 
-  .prev {
-    left: 10px;
-  }
-  .next {
-    right: 10px;
-  }
+      .carousel-container {
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 20px;
+      }
 
-  /* 💌 RSVP */
-  .rsvp button {
-    background: #b8205b;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
+      .gallery {
+        display: flex;
+        transition: transform 0.8s ease-in-out;
+      }
 
-  .rsvp button:hover {
-    background: #951d4b;
-  }
+      .gallery img {
+        width: 300px;
+        height: 380px;
+        object-fit: cover;
+        margin: 0 10px;
+        border-radius: 12px;
+        flex-shrink: 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      }
 
-  footer {
-    text-align: center;
-    padding: 40px 0;
-    font-size: 0.9rem;
-    color: #5c4b4b;
-    background: linear-gradient(135deg, #ffd9e8, #ffe7c7);
-  }
+      /* Buttons */
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(180, 107, 86, 0.8);
+        color: white;
+        border: none;
+        font-size: 2rem;
+        padding: 8px 14px;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+        transition: 0.3s;
+      }
 
-  /* 🌸 Falling Flowers Animation */
-  .flower {
-    position: fixed;
-    top: -10px;
-    font-size: 1.2rem;
-    animation: fall linear forwards;
-    color: #ff7fa3;
-    opacity: 0.8;
-    z-index: 10;
-  }
+      .prev:hover,
+      .next:hover {
+        background: #b46b56;
+      }
 
-  @keyframes fall {
-    0% {
-      transform: translateY(0) rotate(0deg);
-    }
-    100% {
-      transform: translateY(100vh) rotate(360deg);
-      opacity: 0;
-    }
-  }
+      .prev {
+        left: 10px;
+      }
+      .next {
+        right: 10px;
+      }
 
-  /* 📱 Responsive */
-  @media (max-width: 768px) {
-    .celebration-cards {
-      flex-direction: column;
-      align-items: center;
-    }
-    .celebration-card {
-      width: 90%;
-    }
-  }
-</style>
+      /* 💌 RSVP */
+      .rsvp button {
+        background: #b8205b;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
 
+      .rsvp button:hover {
+        background: #8e1a4c;
+      }
+
+      footer {
+        text-align: center;
+        padding: 30px 10px;
+        font-size: 0.9rem;
+        color: #6b4b4b;
+        background: linear-gradient(135deg, #ffd9e8, #fffbea);
+      }
+
+      /* 🌸 Falling Flowers */
+      .flower {
+        position: fixed;
+        top: -10px;
+        font-size: 1.2rem;
+        animation: fall linear forwards;
+        color: #ff7fa3;
+        opacity: 0.8;
+        z-index: 10;
+      }
+
+      @keyframes fall {
+        0% {
+          transform: translateY(0) rotate(0deg);
+        }
+        100% {
+          transform: translateY(100vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      /* 📱 Responsive Adjustments */
+      @media (max-width: 768px) {
+        .hero h2 {
+          font-size: 1.8rem;
+        }
+        .hero p {
+          font-size: 1rem;
+        }
+        .celebration-card {
+          flex: 1 1 90%;
+        }
+        .details {
+          padding: 30px;
+        }
+        .gallery img {
+          width: 160px;
+          height: 220px;
+        }
+      }
+
+      .gallery-title {
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+        font-size: 2.4rem;
+        color: #b8205b; /* same as Himanshu’s accent tone */
+        margin-bottom: 2.5rem;
+        letter-spacing: 0.5px;
+        text-transform: none;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 50px; /* previously 2.5rem, increase for more space */
+      }
+
+      .gallery-title::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(90deg, #b8205b, #f6b6a4);
+        border-radius: 2px;
+        opacity: 0.8;
+      }
+      #countdown-section {
+        background: linear-gradient(135deg, #ffd6e0, #fff3c4);
+        padding: 80px 10%;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      #countdown-section h2 {
+        color: #b35454;
+        font-family: "Playfair Display", serif;
+        margin-bottom: 40px;
+        font-size: 2.5rem;
+      }
+
+      #countdown {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      #countdown div {
+        background: #fff;
+        border-radius: 15px;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      #countdown div:hover {
+        transform: scale(1.05);
+      }
+
+      #countdown span {
+        font-size: 2rem;
+        color: #c47f7f;
+        font-weight: bold;
+      }
+
+      #countdown p {
+        color: #666;
+        margin-top: 5px;
+        font-size: 1rem;
+      }
+    </style>
   </head>
+
   <body>
     <!-- 🌸 Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h2>It’s Official! Himanshu & Anjali Are Getting Married!</h2>
-        <!-- <h2>Himanshu & Anjali Are Getting Married!</h2> -->
+        <h2>It’s Official! <br />Himanshu & Anjali Are Getting Married!</h2>
         <p>Forever Begins on <strong>30th November 2025</strong></p>
       </div>
     </section>
 
-    <!-- 💕 Our Story -->
- <section class="story">
-  <h2 class="celebrations-title">Our Journey</h2>
-  <p class="celebrations-subtitle"><br>
-    Our story began in school where friendship slowly grew into a bond built on trust, care, and understanding.  
-    What started with simple conversations and shared moments has become a journey that shaped who we are today.  
-    <br><br>
-    Since <strong>2013</strong> we have walked together through every phase of life, learning from each experience and celebrating each milestone.  
-    <br><br>
-    As we begin this new chapter surrounded by our families and loved ones, we feel grateful for every memory and excited for all that the future holds. 💫
-  </p>
-</section>
+    <!-- 💕 Story -->
+    <section class="story">
+      <h2 class="celebrations-title">Our Journey Together</h2>
+      <p class="celebrations-subtitle">
+        <br />
+        Our story began back in school, in Class 11. What started as a simple
+        friendship request, an innocent “Will you be my friend?”, slowly grew
+        into something truly meaningful. She was the quiet, thoughtful one; I
+        was the outgoing and talkative one, two very different people who
+        somehow fit just right.
+        <br /><br />
+        In Class 12, our friendship took a beautiful turn, and that’s where it
+        all truly began. We never planned what the future would look like, but
+        with time, through every challenge and change, we continued to stand by
+        each other.
+        <br /><br />
+        Life wasn’t always easy. We faced our share of ups and downs, moments of
+        uncertainty, and times when we were still finding our paths. But with
+        patience, faith, and understanding, we kept growing together.
+        <br /><br />
+        Today, our families are by our side, and this moment feels like a dream
+        coming full circle. This wedding is not just a celebration of love, but
+        of friendship, growth, and the journey that brought us here.
+      </p>
+    </section>
 
-
-
-    <!-- 💍 Wedding Details -->
-    <!-- 💍 The Celebrations Section -->
+    <!-- 💍 Celebrations -->
     <section class="celebrations-section">
       <h2 class="celebrations-title">The Celebrations</h2>
-      <br>
       <p class="celebrations-subtitle">
-        Two families, two homes, countless memories — and one beautiful
-        beginning 💞
+        Two families, two homes, one beautiful beginning 💞
       </p>
 
       <div class="celebration-cards">
-        <!-- Groom Side -->
         <div class="celebration-card groom">
           <h3>Himanshu’s Side</h3>
           <ul>
-            <li>🍱 <strong>Lunch:</strong> 29th Nov, 12:15 PM – Hisar Home</li>
-            <li>🕺 <strong>Sangeet:</strong> 29th Nov,06:15 PM – Hisar Home</li>
-            <li>🐎 <strong>Baraat:</strong> 30th Nov, 12:15 PM – Hisar Home</li>
+            <li>🍱 <strong>Lunch:</strong> 29th Nov – Hisar Home</li>
+            <li>🕺 <strong>Sangeet:</strong> 29th Nov – Hisar Home</li>
+            <li>🐎 <strong>Baraat:</strong> 30th Nov – Hisar Home</li>
           </ul>
         </div>
 
-        <!-- Bride Side -->
         <div class="celebration-card bride">
           <h3>Anjali’s Side</h3>
           <ul>
             <li>
-              💅 <strong>Mehendi:</strong> 29th Nov, 10:15 AM – GreySky Hotel
+              💅 <strong>Mehendi:</strong> 29th Nov – GreySky Hotel, Gurgaon
             </li>
-            <li>🎶 <strong>Sangeet:</strong> 29th Nov, 06:15 PM – GreySky Hotel</li>
             <li>
-              🌼 <strong>Haldi:</strong> 30th Nov, 09:15 AM – Royal Swan Banquets
+              🎶 <strong>Sangeet:</strong> 29th Nov – GreySky Hotel, Gurgaon
+            </li>
+            <li>
+              🌼 <strong>Haldi:</strong> 30th Nov – Royal Swan Banquets, Gurgaon
             </li>
           </ul>
         </div>
       </div>
+    </section>
 
-
+    <!-- 🗓️ Details -->
     <section class="details">
       <h2>Wedding Details</h2>
       <p><strong>Venue:</strong> Royal Swan Banquets, Sector 33, Gurgaon</p>
@@ -397,34 +512,57 @@
       </p>
     </section>
 
-    <!-- 📸 Infinite Carousel -->
+    <!-- 📸 Gallery -->
     <section class="gallery-section">
-      <h2>Gallery</h2>
-      <div class="gallery" id="gallery">
-        <img src="images/IMG3.JPG" alt="Couple photo" />
-        <img src="images/IMG1.JPG" alt="Couple photo" />
-        <img src="images/IMG2.jpg" alt="Couple photo" />
-        <!-- <img src="IMG4.jpg" alt="Couple photo" /> -->
-        <!-- <img src="IMG5.jpg" alt="Couple photo" /> -->
-        <img src="images/IMG6.jpg" alt="Couple photo" />
-        <img src="images/IMG7.jpg" alt="Couple photo" />
-        <img src="images/IMG8.jpg" alt="Couple photo" />
+      <h2 class="gallery-title">A Glimpse of Us</h2>
+      <div class="gallery-wrapper">
+        <button class="carousel-btn prev">&#10094;</button>
+        <div class="gallery" id="gallery">
+          <img src="images/IMG3.JPG" alt="Couple photo" />
+          <img src="images/IMG1.JPG" alt="Couple photo" />
+          <img src="images/IMG2.jpg" alt="Couple photo" />
+          <img src="images/IMG6.jpg" alt="Couple photo" />
+          <img src="images/IMG7.jpg" alt="Couple photo" />
+          <img src="images/IMG8.jpg" alt="Couple photo" />
+        </div>
+        <button class="carousel-btn next">&#10095;</button>
       </div>
-      <button class="carousel-btn prev">&#10094;</button>
-      <button class="carousel-btn next">&#10095;</button>
+    </section>
+
+    <section id="countdown-section">
+      <h2>Countdown to Our Big Day 💞</h2>
+      <div id="countdown">
+        <div>
+          <span id="days"></span>
+          <p>Days</p>
+        </div>
+        <div>
+          <span id="hours"></span>
+          <p>Hours</p>
+        </div>
+        <div>
+          <span id="minutes"></span>
+          <p>Minutes</p>
+        </div>
+        <div>
+          <span id="seconds"></span>
+          <p>Seconds</p>
+        </div>
+      </div>
     </section>
 
     <!-- 💌 RSVP -->
     <section class="rsvp">
-      <h2>Will You Join Us?</h2>
-      <a href="https://wa.me/8816888288" target="_blank">
+      <h2 class="gallery-title">Will You Join Us?</h2>
+      <br />
+      <a href="https://forms.gle/3bpDBgXQZcS634LD9" target="_blank">
         <button>Send RSVP 💌</button>
       </a>
     </section>
 
     <footer>Made with ❤️ by Himanshu & Anjali</footer>
 
-    <!-- 🌸 Falling Flowers -->
+    <!-- 🌸 JS -->
     <script>
       const flowers = ["🌸", "🌺", "🌷", "💮"];
       setInterval(() => {
@@ -436,38 +574,172 @@
         document.body.appendChild(flower);
         setTimeout(() => flower.remove(), 10000);
       }, 400);
+      (function () {
+        const gallery = document.querySelector(".gallery");
+        const nextBtn = document.querySelector(".next");
+        const prevBtn = document.querySelector(".prev");
+        const container =
+          document.querySelector(".carousel-container") ||
+          document.querySelector(".gallery-section");
 
-      /* 📸 Infinite Carousel Logic */
-      const gallery = document.getElementById("gallery");
-      const nextBtn = document.querySelector(".next");
-      const prevBtn = document.querySelector(".prev");
+        if (!gallery) return;
 
-      let offset = 0;
-      const slideSpeed = 1; // smaller = slower
-      const imageWidth = 720; // adjust if images are smaller/wider
-
-      function moveGallery() {
-        offset -= slideSpeed;
-        if (Math.abs(offset) >= gallery.scrollWidth / 2) {
-          offset = 0; // loop back
+        // Duplicate items for infinite effect (only once)
+        if (!gallery.dataset.duplicated) {
+          gallery.innerHTML += gallery.innerHTML;
+          gallery.dataset.duplicated = "true";
         }
-        gallery.style.transform = `translateX(${offset}px)`;
-        requestAnimationFrame(moveGallery);
-      }
 
-      // Clone images to make it loop seamlessly
-      gallery.innerHTML += gallery.innerHTML;
+        // Settings
+        const pxPerClick = 250; // how many px Prev/Next should move
+        const slideSpeed = 1; // pixels per tick for auto scroll (smaller = slower)
+        const autoTick = 16; // ms per tick (~60fps)
+        const resumeDelay = 2500; // restart auto-scroll X ms after interaction
+        let autoInterval = null;
+        let resumeTimeout = null;
 
-      // Manual controls
-      nextBtn.addEventListener("click", () => {
-        offset -= 400;
-      });
-      prevBtn.addEventListener("click", () => {
-        offset += 400;
-      });
+        // Start continuous auto-scroll using incremental scrollLeft changes
+        function startAutoScroll() {
+          stopAutoScroll();
+          autoInterval = setInterval(() => {
+            gallery.scrollLeft += slideSpeed;
+            // wrap when reach half (because content duplicated)
+            if (gallery.scrollLeft >= gallery.scrollWidth / 2) {
+              gallery.scrollLeft -= gallery.scrollWidth / 2;
+            }
+          }, autoTick);
+        }
 
-      // Start infinite animation
-      moveGallery();
+        function stopAutoScroll() {
+          if (autoInterval) {
+            clearInterval(autoInterval);
+            autoInterval = null;
+          }
+        }
+
+        // Safe restart after user interaction
+        function scheduleResume() {
+          if (resumeTimeout) clearTimeout(resumeTimeout);
+          resumeTimeout = setTimeout(() => {
+            startAutoScroll();
+          }, resumeDelay);
+        }
+
+        // After a smooth manual scroll, ensure wrap-around stays seamless
+        function normalizeScroll() {
+          const half = gallery.scrollWidth / 2;
+          if (gallery.scrollLeft >= half) {
+            // subtract half to wrap to equivalent position
+            gallery.scrollLeft -= half;
+          } else if (gallery.scrollLeft <= 0) {
+            // add half to wrap to equivalent position
+            gallery.scrollLeft += half;
+          }
+        }
+
+        // Manual next/prev using smooth behavior
+        function moveNext() {
+          stopAutoScroll();
+          gallery.scrollBy({ left: pxPerClick, behavior: "smooth" });
+          // normalize after animation (timeout must be long enough for smooth)
+          setTimeout(() => {
+            normalizeScroll();
+            scheduleResume();
+          }, 500);
+        }
+
+        function movePrev() {
+          stopAutoScroll();
+          gallery.scrollBy({ left: -pxPerClick, behavior: "smooth" });
+          setTimeout(() => {
+            normalizeScroll();
+            scheduleResume();
+          }, 500);
+        }
+
+        // Button handlers
+        nextBtn?.addEventListener("click", (e) => {
+          e.preventDefault();
+          moveNext();
+        });
+        prevBtn?.addEventListener("click", (e) => {
+          e.preventDefault();
+          movePrev();
+        });
+
+        // Pause on hover / touch to allow manual control
+        gallery.addEventListener("mouseenter", () => {
+          stopAutoScroll();
+        });
+        gallery.addEventListener("mouseleave", () => {
+          scheduleResume();
+        });
+
+        // Touch handling for mobile: pause on touchstart, resume on touchend
+        gallery.addEventListener(
+          "touchstart",
+          () => {
+            stopAutoScroll();
+          },
+          { passive: true }
+        );
+        gallery.addEventListener("touchend", () => {
+          scheduleResume();
+        });
+
+        // Keyboard accessibility (left/right arrows)
+        window.addEventListener("keydown", (e) => {
+          if (e.key === "ArrowRight") {
+            moveNext();
+          } else if (e.key === "ArrowLeft") {
+            movePrev();
+          }
+        });
+
+        // Initial position: ensure not at exact boundary to avoid flicker
+        if (gallery.scrollLeft === 0) {
+          // small offset into the duplicated content for smooth start
+          gallery.scrollLeft = 1;
+        }
+
+        // Start auto-scrolling
+        startAutoScroll();
+
+        // Expose methods for debugging (optional)
+        window.__weddingCarousel = {
+          startAutoScroll,
+          stopAutoScroll,
+          moveNext,
+          movePrev,
+        };
+      })();
+      const weddingDate = new Date("November 30, 2025 18:00:00").getTime();
+
+      const timer = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = weddingDate - now;
+
+        // Time calculations
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        // When the countdown is over
+        if (distance < 0) {
+          clearInterval(timer);
+          document.getElementById("countdown").innerHTML =
+            "<h3>🎉 The Wedding Day is Here! 🎉</h3>";
+        }
+      }, 1000);
     </script>
   </body>
 </html>
